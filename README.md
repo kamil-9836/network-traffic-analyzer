@@ -36,19 +36,23 @@ network-traffic-analyzer/
 │   └── analyzer.py             # Core automation script for packet analysis & alerting
 ├── visualizations/             
 │   └── packet_size_comparison.png  # Generated comparative statistical distribution graph
-└── README.md                   # Complete technical documentation
+└── README.md                   # Complete technical documentation.
+
+
+
 ⚙️ Installation & Setup Guide
+
 1. Clone the Repository
 Open your terminal and clone the repository to your local machine:
 
-Bash
 git clone https://github.com/YOURUSERNAME/network-traffic-analyzer.git
 cd network-traffic-analyzer
+
 2. Install Required Python Packages
 Ensure you have Python installed, then install the required dependencies:
 
-Bash
 pip install scapy pandas matplotlib seaborn
+
 3. Verify Packet Capture Files
 Ensure your sample capture files are placed correctly in the data/ directory:
 
@@ -59,10 +63,10 @@ data/exfiltration.pcap
 💻 Running the Analysis Script
 Execute the core analysis workflow from the root project directory:
 
-Bash
 python scripts/analyzer.py
+
 Sample Terminal Output:
-Plaintext
+
 [-] Analyzing: data/baseline.pcap...
 [+] Total Packets Captured: 37955
 [+] Average Packet Size: 128.86 bytes
